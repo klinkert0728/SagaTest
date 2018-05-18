@@ -23,7 +23,7 @@ class SagaMapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "Saga Test"
         configureMap()
         setupLocationManager()
         // Do any additional setup after loading the view.
@@ -130,7 +130,7 @@ extension SagaMapViewController:CLLocationManagerDelegate {
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl)
     {
-        guard let annotation = view.annotation else
+        guard let _ = view.annotation else
         {
             return
         }

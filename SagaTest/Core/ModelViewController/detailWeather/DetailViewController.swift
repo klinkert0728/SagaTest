@@ -30,7 +30,7 @@ class DetailViewController: UIViewController {
     
     fileprivate func configureAppearance() {
         locationName.text   = "Name: \(viewModel.detailWeather.name)"
-        currentTemp.text    = "Current temperature: \(viewModel.detailWeather.temp)"
+        currentTemp.text    = "Current temperature: \(viewModel.detailWeather.temp) "
         maxTemp.text        = "Max temperature \(viewModel.detailWeather.maxTemp)"
         minTemp.text        = "Min temperature: \(viewModel.detailWeather.minTemp)"
     }

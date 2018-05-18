@@ -55,7 +55,7 @@ extension sagaEndpoint:APIEndpoint {
     var parameters: [String: Any]? {
         switch self {
         case .weatherByLatAndLong(lat: let lat, lng: let lng):
-            return ["lat":lat,"lon":lng, "appid":requestConstants.APIKEY]
+            return ["lat":lat,"lon":lng, "appid":requestConstants.APIKEY,"units":"metric"]
         }
     }
     
