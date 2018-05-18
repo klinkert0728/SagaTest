@@ -23,7 +23,6 @@ class SagaMapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Saga Test"
         configureMap()
         setupLocationManager()
         // Do any additional setup after loading the view.
